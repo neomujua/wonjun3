@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient( to left, blue, violet );
 }
 
 #home {
@@ -25,6 +26,10 @@ body {
 }
 
 .container_half {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     width: 50%;
 }
 
@@ -78,7 +83,51 @@ li {
 }
 
 .navbar {
-    background-color: springgreen;
+    background-color: white;
     position: fixed;
     width: 100vw;
+}
+
+.hello {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 10px;
+}
+
+.circle {
+    position: relative;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 100%;
+    padding: 10px;
+}
+
+#circle1 {
+    width: 150px;
+    height: 150px;
+    top: -100px;
+    left: -550px;
+}
+
+#circle2 {
+    bottom: -70px;
+    left: -50px;
+    width: 100px;
+    height: 100px;
+}
+
+.name {
+    color: white;
+    font-size: 300%;
+    width: 100%;
+}
+
+.self_introduce {
+    color: white;
 }

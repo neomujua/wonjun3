@@ -14,6 +14,7 @@
 
 #intro {
     background-color: brown;
+    flex-wrap: wrap;
 }
 
 #like {
@@ -37,26 +38,38 @@ body {
     width: 200px;
     height: 300px;
     background-color: red;
+    padding: 20px;
     margin: 10px; 
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
 }
 
 .card_image {
-    background-color: blue;
     height: 50%;
 }
 
 .card_title {
-    background-color: brown;
     height: 15%;
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 150%;
 }
 
 .card_description {
-    background-color: burlywood;
     height: 35%;
 }
 
 .container_title {
     width: 100%;
+    font-size: 300%;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #t1 {
@@ -66,10 +79,18 @@ body {
 
 .footer {
     height: 10vh;
+    background: linear-gradient( to left, blue, violet );
+
 }
 
-.footer-copyright {
-    padding: 3vh;
+.footer-copyright{
+    padding: 30px;
+    padding-bottom: 40px;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
 }
 
 ul {
@@ -83,9 +104,15 @@ li {
 }
 
 .navbar {
-    background-color: white;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
     position: fixed;
     width: 100vw;
+    z-index: 10;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 
 .hello {
@@ -130,4 +157,8 @@ li {
 
 .self_introduce {
     color: white;
+}
+
+#my_photo {
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 }
